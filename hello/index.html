@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
         #mainNav {
@@ -460,8 +460,8 @@ figure {
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">The Garnet Society</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">The Union College Student Alumni Association</h2>
+        <h1 class="mx-auto my-0 text-uppercase h1-text">The Garnet Society</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5 h2-text">The Union College Student Alumni Association</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Learn More</a>
       </div>
     </div>
@@ -864,7 +864,14 @@ figure {
     </div>
   </footer>
 <script>
-   console.log("1111111111111111");
+$(document).ready(function(){
+  $(".h2-text").click(function(){
+    $(".h1-text").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
 </script>
 </body>
 
